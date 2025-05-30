@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxo Aluguel de Iates</title>
+ <link rel="shortcut icon" href="imagens/barco2.png" type="image/x-icon">
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #333;
+  }
+  
+  header {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .logo span {
+    color: #00aaff;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: #00aaff;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    color: white;
+    background-color: rgba(0, 0, 50, 0.6);
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .hero-text h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 14px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .destinos, .frota {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .destinos h3, .frota h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .destinos h3 {
+    color: #00aaff;
+  }
+  
+  .frota h3 {
+    color: #c59e56;
+  }
+  
+  
+  
+  .frota-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+  }
+
+  .caixa-titulo {
+  display: flex;
+  align-items: center;
+  padding: 15px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 66%;
+
+}
+
+
+
+.caixa-titulo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.caixa-titulo h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* Cores específicas */
+.caixa-titulo.azul {
+  background-color: #00aaff;
+}
+
+.caixa-titulo.dourado {
+  background-color: #c59e56;
+}
+
+</style>  
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagens/barco1.png" alt="Logo Luxo" />
+      <h1><span>Luxo</span><br>Aluguel de iates</h1>
+    </div>
+    <nav>
+      <a href="pagina_inicial.html">Página Inicial</a>
+      <a href="aluguel_de_iates.html">Aluguel de Iates</a>
+      <a href="destinos.html">Destinos</a>
+      <a href="tripulaçao.html">Tripulação</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="imagens/barcoprincipal.jpg" alt="Iate no mar" class="hero-img"/>
+    <div class="hero-text">
+      <img src="imagens/barco1.png" alt="barco1"><h2>Você só encontra coisas boas, se combinar luxo e paixão.</h2>
+      <p>Ligue agora para agendar as férias de sua vida: <strong>(00) 8000-0000</strong></p>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="destinos">
+        <div class="caixa-titulo azul"> 
+      <h3><img src="imagens/destino.png" alt="Ícone destino"> Destinos</h3> </div>
+      <h4>Destinos</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Repudiandae animi architecto corrupti, 
+        praesentium <br>maxime vitae possimus aspernatur. Ex, et ipsum, ipsam quas,<br> blanditiis repudiandae qui 
+        dolores veniam unde aspernatur est?</p>
+      <img src="imagens/barcodestino.jpg" alt="Imagem do destino" />
+    </section>
+
+    <section class="frota">
+        <div class="caixa-titulo dourado">
+            <h3><img src="imagens/nossafrota.png" alt="Ícone frota">Nossa frota</h3> </div>
+      <h4>Nossa frota</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Repudiandae animi architecto corrupti, 
+        praesentium <br>maxime vitae possimus aspernatur. Ex, et ipsum, ipsam quas,<br> blanditiis repudiandae qui 
+        dolores veniam unde aspernatur est?</p>      <div class="frota-imagens">
+        <img src="imagens/barconossafrota1.jpg" alt="Iate 1" />
+        <img src="imagens/barconossafrota2.jpg" alt="Iate 2" />
+        <img src="imagens/barconossafrota2.jpg" alt="Iate 3" />
+        <img src="imagens/barconossafrota1.jpg" alt="Iate 4" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 por Luxo aluguel de iates. </p>
+  </footer>
+</body>
+</html>
